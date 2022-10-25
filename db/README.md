@@ -2,6 +2,13 @@
 
 ## Mongo DB Seed data
 
+simple seed data for mongo db using dotenv
+```dotenv
+NODE_ENV='development'
+PORT = 5000
+MONGO_URI = 'mongodb://root:rootpassword@localhost:27017/?authMechanism=DEFAULT'
+```
+
 We have used mongo db image and for data seed used `docker-entrypoint-initdb.d` and shell script is in file `init-mongo.sh`
 
 

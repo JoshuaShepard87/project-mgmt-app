@@ -58,7 +58,7 @@ const RootQuery = new GraphQLObjectType({
         clients: {
           type: new GraphQLList(ClientType),
           resolve(parent, args) {
-            return clients.find(args.id);
+            return Client.find(args.id);
           }
         },
         //get a single client

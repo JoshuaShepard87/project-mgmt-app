@@ -4,12 +4,14 @@ const { graphqlHTTP } = require('express-graphql');
 const colors = require('colors');
 const port = process.env.PORT || 5000;
 const connectDB = require('./config/db');
-
+const cors = require('cors');
 const app = express();
 const schema = require('./schema/schema');
 
 //connect to database
 connectDB();
+
+app.use(cors());
 
 app.get('/', (req, res) => {
     res.status(200).send(`Server is running on port ${port}`);
