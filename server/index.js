@@ -2,7 +2,7 @@ const express = require('express');
 require('dotenv').config();
 const { graphqlHTTP } = require('express-graphql');
 const colors = require('colors');
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 4000;
 const connectDB = require('./config/db');
 const cors = require('cors');
 const app = express();
