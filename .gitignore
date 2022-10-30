@@ -3,3 +3,5 @@ node_modules
 .env
 project-mgmt-app.iml
 
+
+db/postgres/postgres-data/**
